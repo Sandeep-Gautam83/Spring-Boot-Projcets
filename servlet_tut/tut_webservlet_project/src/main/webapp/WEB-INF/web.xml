@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" 
+         id="WebApp_ID" version="6.0">
+
+  <!-- Display Name of the Web Application -->
+  <display-name>tut_webservlet_project</display-name>
+
+  <!-- Welcome File List -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+
+  <!-- Servlet Configuration -->
+  <servlet>
+    <servlet-name>second</servlet-name>
+    <servlet-class>servlets.SecondServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>second</servlet-name>
+    <url-pattern>/second</url-pattern> <!-- Added leading "/" to URL pattern -->
+  </servlet-mapping>
+
+</web-app>
